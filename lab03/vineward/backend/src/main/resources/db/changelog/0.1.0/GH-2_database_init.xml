@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+  <!-- #### GH-2.1XX - USERS #### -->
+  <changeSet id="GH-2.101" author="lherman">
+    <createTable tableName="app_user">
+      <column name="user_id" type="UUID">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="pk_app_user"/>
+      </column>
+      <column name="username" type="VARCHAR(48)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="email" type="VARCHAR(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="password" type="VARCHAR(324)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="origin" type="VARCHAR(32)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+  <changeSet id="GH-2.102" author="lherman">
+    <createTable tableName="app_user_token">
+      <column name="user_token_id" type="BIGINT" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="pk_app_user_token"/>
+      </column>
+      <column name="app_user_fk" type="UUID">
+        <constraints nullable="false"/>
+      </column>
+      <column name="token" type="VARCHAR(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="refresh_token" type="VARCHAR(255)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="expired" type="BOOLEAN">
+        <constraints nullable="false"/>
+      </column>
+      <column name="revoked" type="BOOLEAN">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+  <changeSet id="GH-2.103" author="lherman">
+    <createTable tableName="app_user_role">
+      <column name="user_fk" type="UUID">
+        <constraints nullable="false"/>
+      </column>
+      <column name="user_role" type="VARCHAR(16)">
+        <constraints nullable="false" checkConstraint="user_role in ('ADMINISTRATOR','MODERATOR','EDITOR','REVIEWER','USER')"/>
+      </column>
+    </createTable>
+    <addPrimaryKey tableName="app_user_role" columnNames="user_fk, user_role"/>
+  </changeSet>
+
+  <changeSet id="GH-2.110" author="lherman">
+    <addUniqueConstraint constraintName="uk_user_email" tableName="app_user" columnNames="email"/>
+  </changeSet>
+  <changeSet id="GH-2.111" author="lherman">
+    <addUniqueConstraint constraintName="uk_user_username" tableName="app_user" columnNames="username"/>
+  </changeSet>
+
+  <!-- #### GH-2.2XX - REVIEWS #### -->
+  <changeSet id="GH-2.201" author="lherman">
+    <createTable tableName="review">
+      <column name="review_id" type="BIGINT" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="pk_review"/>
+      </column>
+      <column name="title" type="VARCHAR(250)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="body" type="TEXT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="status" type="VARCHAR(16)">
+        <constraints nullable="false" checkConstraint="status in ('DRAFT','PENDING_REVIEW','VERIFIED')"/>
+      </column>
+      <column name="author_fk" type="UUID">
+        <constraints nullable="false"/>
+      </column>
+      <column name="wine_fk" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+  <changeSet id="GH-2.202" author="lherman">
+    <createTable tableName="review_comment">
+      <column name="comment_id" type="BIGINT" autoIncrement="true">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="pk_review_comment"/>
+      </column>
+      <column name="body" type="TEXT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="review_fk" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="author_fk" type="UUID">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <!-- #### GH-2.3XX - WINES #### -->
+  <changeSet id="GH-2.301" author="lherman">
+    <createTable tableName="wine">
+      <column autoIncrement="true" name="wine_id" type="BIGINT">
+        <constraints nullable="false" primaryKey="true" primaryKeyName="pk_wine"/>
+      </column>
+      <column name="name" type="VARCHAR(100)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="vintner" type="VARCHAR(50)">
+        <constraints nullable="false"/>
+      </column>
+      <column name="origin" type="VARCHAR(32)">
+        <constraints nullable="false" checkConstraint="origin in ('AARGAU','APPENZELL_INNERRHODEN','APPENZELL_AUSSERRHODEN','BERN','BASEL_LAND','BASEL_STADT','FRIBOURG','GENEVE','GLARUS','GRAUBUNDEN','JURA','LUZERN','NEUCHATEL','NIDWALDEN','OBWALDEN','SCHAFFHAUSEN','SCHWYZ','SOLOTHURN','ST_GALLEN','THURGAU','TICINO','URI','WALLIS','VAUD','ZUG','ZURICH')"/>
+      </column>
+      <column name="region" type="VARCHAR(24)">
+        <constraints nullable="false" checkConstraint="region in ('GENEVA','TICINO','THREE_LAKES','GERMAN_SWITZERLAND','VALAIS','VAUD')"/>
+      </column>
+    </createTable>
+  </changeSet>
+  <changeSet id="GH-2.302" author="lherman">
+    <createTable tableName="wine_variety">
+      <column name="wine_fk" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="variety" type="VARCHAR(32)">
+        <constraints nullable="false" checkConstraint="variety in ('ALIGOTE','AMIGNE','ANCELLOTTA','BARBERA','BONDOLA','CABERNET_BLANC','CABERNET_FRANC','CABERNET_JURA','CABERNET_SAUVIGNON','CARMINOIR','CHARDONNAY','CHASSELAS','COMPLETER','CORNALIN','DIOLINOIR','DIVICO','DIVONA','DORAL','DUNKELFELDER','GALOTTA','GAMARET','GAMAY','GARANOIR','GEWURZTRAMINER','HEIDA','HUMAGNE_BLANCHE','HUMAGNE_ROUGE','JOHANNISBERG','MARSANNE_BLANCHE','MERLOT','MULLER_THURGAU','MUSCAT_BLANC','NEBBIOLO','PETITE_ARVINE','PINOT_GRIS','PINOT_NOIR','RAUSCHLING','RIESLING','SAUVIGNON_BLANC','SAVAGNIN_BLANC','SEMILLON','SILVANER','SYRAH','VIOGNIER')"/>
+      </column>
+    </createTable>
+    <addPrimaryKey tableName="wine_variety" columnNames="wine_fk, variety"/>
+  </changeSet>
+
+  <!-- Foreign keys -->
+  <changeSet id="GH-2.120" author="lherman">
+    <addForeignKeyConstraint constraintName="fk_token__user"
+      baseTableName="app_user_token" baseColumnNames="app_user_fk"
+      referencedTableName="app_user" referencedColumnNames="user_id"/>
+  </changeSet>
+  <changeSet id="GH-2.121" author="lherman">
+    <addForeignKeyConstraint constraintName="fk_user_role__user"
+      baseTableName="app_user_role" baseColumnNames="user_fk"
+      referencedTableName="app_user" referencedColumnNames="user_id"/>
+  </changeSet>
+
+  <changeSet id="GH-2.210" author="lherman">
+    <addForeignKeyConstraint constraintName="fk_review__author"
+      baseTableName="review" baseColumnNames="author_fk"
+      referencedTableName="app_user" referencedColumnNames="user_id"/>
+  </changeSet>
+  <changeSet id="GH-2.211" author="lherman">
+    <addForeignKeyConstraint constraintName="fk_review__wine"
+      baseTableName="review" baseColumnNames="wine_fk"
+      referencedTableName="wine" referencedColumnNames="wine_id"/>
+  </changeSet>
+
+  <changeSet id="GH-2.215" author="lherman">
+    <addForeignKeyConstraint constraintName="fk_comment__author"
+      baseTableName="review_comment" baseColumnNames="author_fk"
+      referencedTableName="app_user" referencedColumnNames="user_id"/>
+  </changeSet>
+  <changeSet id="GH-2.216" author="lherman">
+    <addForeignKeyConstraint constraintName="fk_comment__review"
+      baseTableName="review_comment" baseColumnNames="review_fk"
+      referencedTableName="review" referencedColumnNames="review_id"/>
+  </changeSet>
+
+  <changeSet id="GH-2.310" author="lherman">
+    <addForeignKeyConstraint constraintName="fk_wine_variety__wine"
+      baseTableName="wine_variety" baseColumnNames="wine_fk"
+      referencedTableName="wine" referencedColumnNames="wine_id"/>
+  </changeSet>
+</databaseChangeLog>

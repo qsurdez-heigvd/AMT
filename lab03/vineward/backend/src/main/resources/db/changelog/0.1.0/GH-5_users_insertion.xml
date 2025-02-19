@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert-default-users" author="qsurdez">
+        <!-- Admin user -->
+        <insert tableName="app_user">
+            <column name="user_id" value="123e4567-e89b-12d3-a456-426614174000"/>
+            <column name="username" value="admin.user"/>
+            <column name="email" value="admin@vineward.ch"/>
+            <column name="password" value="$argon2id$v=19$m=16384,t=2,p=1$Ij7FSd+eNW8M0qLnalcXyw$6553jDXYRFLavhsFUsCGHf9NeMTh7vww+TNeikiQ1Jw$argon2id$v=19$m=16384,t=2,p=1$a+yawFtmrLTM9t3/GCZ02g$QXlaZl/UyTAxoQ1TEREvCnetgD62Ls/CDjNmyDgUfas"/>
+            <column name="origin" value="VAUD"/>
+        </insert>
+
+        <!-- Moderator user -->
+        <insert tableName="app_user">
+            <column name="user_id" value="223e4567-e89b-12d3-a456-426614174000"/>
+            <column name="username" value="mod.user"/>
+            <column name="email" value="moderator@vineward.ch"/>
+            <column name="password" value="$argon2id$v=19$m=16384,t=2,p=1$Ij7FSd+eNW8M0qLnalcXyw$6553jDXYRFLavhsFUsCGHf9NeMTh7vww+TNeikiQ1Jw$argon2id$v=19$m=16384,t=2,p=1$a+yawFtmrLTM9t3/GCZ02g$QXlaZl/UyTAxoQ1TEREvCnetgD62Ls/CDjNmyDgUfas"/>
+            <column name="origin" value="BERN"/>
+        </insert>
+
+        <!-- Reviewer user -->
+        <insert tableName="app_user">
+            <column name="user_id" value="423e4567-e89b-12d3-a456-426614174000"/>
+            <column name="username" value="reviewer.user"/>
+            <column name="email" value="reviewer@vineward.ch"/>
+            <column name="password" value="$argon2id$v=19$m=16384,t=2,p=1$Ij7FSd+eNW8M0qLnalcXyw$6553jDXYRFLavhsFUsCGHf9NeMTh7vww+TNeikiQ1Jw$argon2id$v=19$m=16384,t=2,p=1$a+yawFtmrLTM9t3/GCZ02g$QXlaZl/UyTAxoQ1TEREvCnetgD62Ls/CDjNmyDgUfas"/>
+            <column name="origin" value="VAUD"/>
+        </insert>
+
+        <!-- Regular user -->
+        <insert tableName="app_user">
+            <column name="user_id" value="f041e55d-e9fd-4774-b7be-42c203b331f6"/>
+            <column name="username" value="user.user"/>
+            <column name="email" value="user@vineward.ch"/>
+            <column name="password" value="$argon2id$v=19$m=16384,t=2,p=1$Ij7FSd+eNW8M0qLnalcXyw$6553jDXYRFLavhsFUsCGHf9NeMTh7vww+TNeikiQ1Jw$argon2id$v=19$m=16384,t=2,p=1$a+yawFtmrLTM9t3/GCZ02g$QXlaZl/UyTAxoQ1TEREvCnetgD62Ls/CDjNmyDgUfas"/>
+            <column name="origin" value="GENEVE"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="insert-default-user-roles" author="qsurdez">
+        <!-- Administrator role -->
+        <insert tableName="app_user_role">
+            <column name="user_fk" value="123e4567-e89b-12d3-a456-426614174000"/>
+            <column name="user_role" value="ADMINISTRATOR"/>
+        </insert>
+
+        <!-- Moderator role -->
+        <insert tableName="app_user_role">
+            <column name="user_fk" value="223e4567-e89b-12d3-a456-426614174000"/>
+            <column name="user_role" value="MODERATOR"/>
+        </insert>
+
+        <!-- Reviewer role -->
+        <insert tableName="app_user_role">
+            <column name="user_fk" value="423e4567-e89b-12d3-a456-426614174000"/>
+            <column name="user_role" value="REVIEWER"/>
+        </insert>
+
+        <!-- Basic role -->
+        <insert tableName="app_user_role">
+            <column name="user_fk" value="f041e55d-e9fd-4774-b7be-42c203b331f6"/>
+            <column name="user_role" value="USER"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

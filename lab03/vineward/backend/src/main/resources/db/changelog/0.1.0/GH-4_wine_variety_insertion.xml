@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <!-- Insert data into the wine_variety table -->
+    <changeSet id="GH-4.101" author="mstefani">
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="1"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="1"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="2"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="3"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="3"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="4"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="4"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="5"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="5"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="6"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="6"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="7"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="8"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="8"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="9"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="9"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="10"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="10"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="11"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="12"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="12"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="13"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="13"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="13"/>
+            <column name="variety" value="SAVAGNIN_BLANC"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="14"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="15"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="15"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="15"/>
+            <column name="variety" value="RIESLING"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="16"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="16"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="17"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="17"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="17"/>
+            <column name="variety" value="MULLER_THURGAU"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="18"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="19"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="20"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="21"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="21"/>
+            <column name="variety" value="SAUVIGNON_BLANC"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="22"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="23"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="24"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="25"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="26"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="27"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="28"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="29"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="30"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="31"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="32"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="33"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="34"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="35"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="36"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="37"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="38"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="39"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="40"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="41"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="42"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="43"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="44"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="45"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="46"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="47"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="48"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="49"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="50"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="51"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="52"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="53"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="53"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="53"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="54"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="54"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="54"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="55"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="55"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="55"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="56"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="56"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="57"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="57"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="57"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="58"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="58"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="58"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="59"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="59"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="59"/>
+            <column name="variety" value="CABERNET_SAUVIGNON"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="60"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="60"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="60"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="61"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="61"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="61"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="62"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="62"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="62"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="63"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="64"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="65"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="65"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="66"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="66"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="67"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="67"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="68"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="68"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="68"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="69"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="69"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="70"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="70"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="70"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="71"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="71"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="72"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="72"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="73"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="74"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="74"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="75"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="76"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="77"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="77"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="78"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="79"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="79"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="80"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="80"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="80"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="81"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="81"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="82"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="83"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="84"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="84"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="85"/>
+            <column name="variety" value="GEWURZTRAMINER"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="85"/>
+            <column name="variety" value="RIESLING"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="85"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="86"/>
+            <column name="variety" value="GEWURZTRAMINER"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="86"/>
+            <column name="variety" value="RIESLING"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="86"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="87"/>
+            <column name="variety" value="GEWURZTRAMINER"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="87"/>
+            <column name="variety" value="MUSCAT_BLANC"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="88"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="89"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="90"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="91"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="92"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="93"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="93"/>
+            <column name="variety" value="CABERNET_SAUVIGNON"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="94"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="95"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="96"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="97"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="98"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="99"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="100"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="100"/>
+            <column name="variety" value="AMIGNE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="100"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="101"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="102"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="103"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="104"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="105"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="106"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="107"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="108"/>
+            <column name="variety" value="PETITE_ARVINE"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="109"/>
+            <column name="variety" value="MERLOT"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="110"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="110"/>
+            <column name="variety" value="MULLER_THURGAU"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="111"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="111"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="112"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="112"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="112"/>
+            <column name="variety" value="CHARDONNAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="113"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="114"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="115"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="116"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="116"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="117"/>
+            <column name="variety" value="PINOT_GRIS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="117"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="117"/>
+            <column name="variety" value="RIESLING"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="118"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="118"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="119"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="120"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="121"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="122"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="123"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="124"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="124"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="125"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="126"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="126"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="127"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="128"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="129"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="130"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="131"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="132"/>
+            <column name="variety" value="PINOT_NOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="133"/>
+            <column name="variety" value="RAUSCHLING"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="134"/>
+            <column name="variety" value="RAUSCHLING"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="135"/>
+            <column name="variety" value="RIESLING"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="135"/>
+            <column name="variety" value="MULLER_THURGAU"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="136"/>
+            <column name="variety" value="SAUVIGNON_BLANC"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="136"/>
+            <column name="variety" value="CHASSELAS"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="137"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="138"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="139"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="140"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="141"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="141"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="141"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="142"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="143"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="144"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="145"/>
+            <column name="variety" value="CORNALIN"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="145"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="145"/>
+            <column name="variety" value="GAMAY"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="146"/>
+            <column name="variety" value="GAMARET"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="146"/>
+            <column name="variety" value="GARANOIR"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="146"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="147"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="148"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="149"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+        <insert tableName="wine_variety">
+            <column name="wine_fk" valueNumeric="150"/>
+            <column name="variety" value="SYRAH"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

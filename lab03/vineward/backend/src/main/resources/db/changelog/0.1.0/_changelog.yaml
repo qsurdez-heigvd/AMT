@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - include:
+      file: GH-2_database_init.xml
+      relativeToChangelogFile: true
+  - include:
+      file: GH-3_wine_insertion.xml
+      relativeToChangelogFile: true
+  - include:
+      file: GH-4_wine_variety_insertion.xml
+      relativeToChangelogFile: true
+  - include:
+      file: GH-5_users_insertion.xml
+      relativeToChangelogFile: true
+  - include:
+      file: GH-6_reviews_insertion.xml
+      relativeToChangelogFile: true

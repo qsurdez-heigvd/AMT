@@ -1,0 +1,98 @@
+title: "Vineward - Forum Suisse du Vin"
+description: "Bienvenue sur Vineward, la plateforme dédiée aux amateurs et professionnels du vin suisse."
+hero:
+  title: "Plongez au cœur du Vin Suisse"
+  description: "Régalez vos papilles, rencontrez des passionnés et apprenez des meilleurs sommeliers."
+  background: "https://cdn.unitycms.io/images/AVEUw32zqddBgZO1YfTrfM.jpg?op=ocroped&val=1200,630,1000,1000,0,0&sum=1fcGt4tNIpA"
+  links:
+    - label: "Vineward"
+      to: "/auth/register"
+      variant: "primary"
+
+
+reviews:
+  title: "Dernières reviews de la communauté"
+  description: "Jetez un œil aux plus récentes découvertes et coups de cœur partagés par nos membres."
+  items:
+    - image: "https://www.coop.ch/img/produkte/280_450/RGB/1001877020_001.jpg?_=1729602449241"
+      wineName: "Chasselas du Lavaux"
+      region: "Vaud"
+      author: "Jean-Pierre"
+      rating: 4
+      text: "Un Chasselas vif et minéral, parfait pour l'apéritif et les plats au fromage."
+    - image: "https://www.coop.ch/img/produkte/280_450/RGB/1016792004_001.jpg?_=1715344336742"
+      wineName: "Gamaret & Garanoir"
+      region: "Genève"
+      author: "Laura"
+      rating: 5
+      text: "Un assemblage finement épicé avec un fruit bien présent. Idéal pour accompagner la chasse."
+    - image: "https://www.coop.ch/img/produkte/280_450/RGB/1011154012_001.jpg?_=1724744136467"
+      wineName: "Merlot Reserve"
+      region: "Tessin"
+      author: "Marco"
+      rating: 5
+      text: "Riche en tanins, équilibré et profondément fruité. Un grand vin qui vieillit admirablement."
+    - image: "https://www.coop.ch/img/produkte/280_450/RGB/1011154012_001.jpg?_=1724744136467"
+      wineName: "Merlot Reserve"
+      region: "Tessin"
+      author: "Marco"
+      rating: 5
+      text: "Riche en tanins, équilibré et profondément fruité. Un grand vin qui vieillit admirablement."
+    - image: "https://www.coop.ch/img/produkte/280_450/RGB/1011154012_001.jpg?_=1724744136467"
+      wineName: "Merlot Reserve"
+      region: "Tessin"
+      author: "Marco"
+      rating: 5
+      text: "Riche en tanins, équilibré et profondément fruité. Un grand vin qui vieillit admirablement."
+
+sections:
+  - title: "Pourquoi Vineward ?"
+    description: "Nous rassemblons sommeliers, vignerons et amateurs autour d’une passion commune : le vin. Apprenez-en plus sur nos fonctionnalités et notre philosophie."
+    align: "left"
+    features:
+      - icon: "carbon-group"
+        title: "Communauté active"
+        description: "Des échanges quotidiens, des événements en ligne, et des passionnés prêts à partager."
+      - icon: "carbon-events-alt"
+        title: "Événements et Dégustations"
+        description: "Participez à nos rendez-vous virtuels ou en présentiel pour déguster de nouveaux crus."
+      - icon: "carbon-idea"
+        title: "Partage de conseils"
+        description: "Profitez de l'expertise collective pour affiner vos accords mets & vins."
+
+  - title: "Nos cantons en lumière"
+    description: "La Suisse viticole offre une diversité exceptionnelle. De la fraîcheur valaisanne à la douceur tessinoise, découvrez les spécificités de chaque canton."
+    align: "center"
+    features:
+      - icon: "carbon-location-company"
+        title: "Valais"
+        description: "Petit Arvine, Cornalin et Syrah au terroir alpin."
+      - icon: "carbon-location-company"
+        title: "Vaud"
+        description: "Berceau du Chasselas et Gamay sur les rives du Léman."
+      - icon: "carbon-location-company"
+        title: "Genève"
+        description: "Pinot Noir, Gamaret et assemblages modernes au cœur international."
+      - icon: "carbon-location-company"
+        title: "Tessin"
+        description: "Merlot expressif sous influence méditerranéenne."
+      - icon: "carbon-location-company"
+        title: "Trois-Lacs"
+        description: "Gewürztraminer, Freiburger et Pinot Gris aux notes aromatiques."
+      - icon: "carbon-location-company"
+        title: "Suisse-Allemande"
+        description: "Riesling-Sylvaner et surprises locales variées."
+
+features:
+  title: Fonctionnalités clés
+  description: "Tout est pensé pour favoriser la découverte, l’échange et la modération."
+  items:
+    - icon: "carbon-security"
+      title: "Validation & Modération"
+      description: "Garantir la pertinence et la cordialité des échanges."
+    - icon: "carbon-catalog"
+      title: "Répertoire des Vignerons"
+      description: "Découvrez et contactez directement des domaines viticoles suisses."
+    - icon: "carbon-notification"
+      title: "Notifications en temps réel"
+      description: "Ne manquez plus jamais un nouveau commentaire ou une nouvelle review."

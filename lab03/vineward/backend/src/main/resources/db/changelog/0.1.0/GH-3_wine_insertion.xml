@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <!-- Insert data into the "wine" table -->
+    <changeSet id="GH-3.101" author="mstefani">
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="1"/>
+            <column name="name" value="Grand Vin Mousseux Cordon Or Mauler, brut"/>
+            <column name="vintner" value="Mauler"/>
+            <column name="origin" value="NEUCHATEL"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="2"/>
+            <column name="name" value="Mousseux Chardonnay Blanc de Blancs Baccarat brut"/>
+            <column name="vintner" value="Baccarat"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="3"/>
+            <column name="name" value="Murailles Brut Grand Vin Mousseux H. Badoux"/>
+            <column name="vintner" value="H. Badoux"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="4"/>
+            <column name="name" value="Naturaplan Bio Comte Jg"/>
+            <column name="vintner" value="Naturaplan"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="5"/>
+            <column name="name" value="Mauler Cordon Or Demi-Sec"/>
+            <column name="vintner" value="Mauler"/>
+            <column name="origin" value="NEUCHATEL"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="6"/>
+            <column name="name" value="Vin Mousseux Suisse Rosé Murailles Henri Badoux, brut"/>
+            <column name="vintner" value="Henri Badoux"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="7"/>
+            <column name="name" value="Zürich AOC Chardonnay Staatskellerei Zürich"/>
+            <column name="vintner" value="Staatskellerei Zürich"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="8"/>
+            <column name="name" value="Zürich AOC Vin Mousseux Sparkling Zürcher, extra dry"/>
+            <column name="vintner" value="Zürcher"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="9"/>
+            <column name="name" value="Vin de Pays Suisse Dénuo Cuvée Blanc Staatskellerei Zürich"/>
+            <column name="vintner" value="Staatskellerei Zürich"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="10"/>
+            <column name="name" value="Mauler Cordon Or Brut"/>
+            <column name="vintner" value="Mauler"/>
+            <column name="origin" value="NEUCHATEL"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="11"/>
+            <column name="name" value="Spumante brut Charme Angelo Delea"/>
+            <column name="vintner" value="Angelo Delea"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="12"/>
+            <column name="name" value="Naturaplan Bio Mousseux Baccarat brut"/>
+            <column name="vintner" value="Baccarat"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="13"/>
+            <column name="name" value="Valais AOC Favi assemblage blanc"/>
+            <column name="vintner" value="Favi"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="14"/>
+            <column name="name" value="Genève AOC Chardonnay Choully Domaine du Paradis"/>
+            <column name="vintner" value="Domaine du Paradis"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="15"/>
+            <column name="name" value="Graubünden AOC Wein Einfach Fein Weiss Weingut Von Salis"/>
+            <column name="vintner" value="Weingut Von Salis"/>
+            <column name="origin" value="GRAUBUNDEN"/>
+            <column name="region" value="THREE_LAKES"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="16"/>
+            <column name="name" value="Mousseux Suisse Vin de Pays Coup d''Etier brut Testuz"/>
+            <column name="vintner" value="Testuz"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="17"/>
+            <column name="name" value="Aargau AOC Charmant weisse Assemblage"/>
+            <column name="vintner" value="Charmant"/>
+            <column name="origin" value="AARGAU"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="18"/>
+            <column name="name" value="Genève AOC Chardonnay Domaine des Alouettes"/>
+            <column name="vintner" value="Domaine des Alouettes"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="19"/>
+            <column name="name" value="Genève Chardonnay Feuille d''Or La Cave de Genève"/>
+            <column name="vintner" value="La Cave de Genève"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="20"/>
+            <column name="name" value="Schaffhausen AOC Chardonnay Lindengelb Weingut Lindenhof"/>
+            <column name="vintner" value="Weingut Lindenhof"/>
+            <column name="origin" value="SCHAFFHAUSEN"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="21"/>
+            <column name="name" value="Ticino DOC Bianco del San Giorgio"/>
+            <column name="vintner" value="San Giorgio"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="22"/>
+            <column name="name" value="Ticino DOC Cantina Giubiasco Bohème Barrique"/>
+            <column name="vintner" value="Cantina Giubiasco"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="23"/>
+            <column name="name" value="Aigle Les Murailles Chablais AOC H. Badoux"/>
+            <column name="vintner" value="H. Badoux"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="24"/>
+            <column name="name" value="Lavaux AOC St-Saphorin La Donjannaz Les Terrasses de Lavaux"/>
+            <column name="vintner" value="Les Terrasses de Lavaux"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="25"/>
+            <column name="name" value="Chablais AOC Yvorne La Thibaude"/>
+            <column name="vintner" value="La Thibaude"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="26"/>
+            <column name="name" value="La Côte AOC Mont-sur-Rolle Le Charmeur"/>
+            <column name="vintner" value="Le Charmeur"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="27"/>
+            <column name="name" value="Chasselas de Romandie Vin de Pays Sélection Le Muriset"/>
+            <column name="vintner" value="Le Muriset"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="28"/>
+            <column name="name" value="Naturaplan Bio Demeter Waadt AOC Chasselas Libellule"/>
+            <column name="vintner" value="Libellule"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="29"/>
+            <column name="name" value="La Côte AOC Féchy L'Artimon"/>
+            <column name="vintner" value="L''Artimon"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="30"/>
+            <column name="name" value="La Côte AOC Féchy Les Merveilles"/>
+            <column name="vintner" value="Les Merveilles"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="31"/>
+            <column name="name" value="Valais AOC Fendant Les Murettes Maison Gilliard"/>
+            <column name="vintner" value="Maison Gilliard"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="32"/>
+            <column name="name" value="Valais AOC Fendant Domherrenwein Provins"/>
+            <column name="vintner" value="Provins"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="33"/>
+            <column name="name" value="Chablais AOC Aigle Les Plantailles"/>
+            <column name="vintner" value="Les Plantailles"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="34"/>
+            <column name="name" value="Lavaux AOC Coup de L''Etrier Testuz"/>
+            <column name="vintner" value="Testuz"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="35"/>
+            <column name="name" value="La Côte AOC Mont-sur-Rolle Les Merveilles"/>
+            <column name="vintner" value="Les Merveilles"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="36"/>
+            <column name="name" value="La Côte AOC Féchy Légende Kursner"/>
+            <column name="vintner" value="Kursner"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="37"/>
+            <column name="name" value="Valais AOC Fendant Les Moulins"/>
+            <column name="vintner" value="Les Moulins"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="38"/>
+            <column name="name" value="La Côte AOC Luins Les Merveilles"/>
+            <column name="vintner" value="Les Merveilles"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="39"/>
+            <column name="name" value="La Côte AOC Féchy Domaine du Martheray"/>
+            <column name="vintner" value="Domaine du Martheray"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="40"/>
+            <column name="name" value="Epesses Rives d''Or, Les Terrasses de Lavaux AOC"/>
+            <column name="vintner" value="Les Terrasses de Lavaux"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="41"/>
+            <column name="name" value="Vin de Pays Romand Chasselas de Romandie Les Coursons"/>
+            <column name="vintner" value="Les Coursons"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="42"/>
+            <column name="name" value="Lavaux AOC Chardonne Grand Cru Cure d''Attalens"/>
+            <column name="vintner" value="Cure d''Attalens"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="43"/>
+            <column name="name" value="Valais AOC Fendant Domaines des Virets"/>
+            <column name="vintner" value="Domaines des Virets"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="44"/>
+            <column name="name" value="Vufflens Le Château La Côte AOC"/>
+            <column name="vintner" value="Vufflens Le Château"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="45"/>
+            <column name="name" value="Lavaux AOC La Salamandre"/>
+            <column name="vintner" value="La Salamandre"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="46"/>
+            <column name="name" value="Lavaux AOC Epesses Braise d''Enfer Les Frères Dubois"/>
+            <column name="vintner" value="Les Frères Dubois"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="47"/>
+            <column name="name" value="Valais AOC Cornalin Terrasses du Rhône Bibacchus"/>
+            <column name="vintner" value="Bibacchus"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="48"/>
+            <column name="name" value="Valais AOC Cornalin Fleur du Rhône"/>
+            <column name="vintner" value="Fleur du Rhône"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="49"/>
+            <column name="name" value="Valais AOC Cornalin Maître de Chais"/>
+            <column name="vintner" value="Maître de Chais"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="50"/>
+            <column name="name" value="Valais AOC Cornalin Defayes &amp; Crettenand"/>
+            <column name="vintner" value="Defayes &amp; Crettenand"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="51"/>
+            <column name="name" value="Valais AOC Cornalin"/>
+            <column name="vintner" value="Inconnu"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="52"/>
+            <column name="name" value="Valais AOC Cornalin Reserve Jean-René Germanier"/>
+            <column name="vintner" value="Jean-René Germanier"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="53"/>
+            <column name="name" value="Valais AOC Création Limitée Assemblage Rouge Futura Terram"/>
+            <column name="vintner" value="Futura Terram"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="54"/>
+            <column name="name" value="Naturaplan Bio Valais AOC Nez Noir Les Domaines Rouvinez"/>
+            <column name="vintner" value="Les Domaines Rouvinez"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="55"/>
+            <column name="name" value="Vaud AOC Assemblage Rouge Escargot"/>
+            <column name="vintner" value="Escargot"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="56"/>
+            <column name="name" value="Naturaplan Bio Valais AOC Rebbio Jean-René Germanier"/>
+            <column name="vintner" value="Jean-René Germanier"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="57"/>
+            <column name="name" value="Valais AOC Favi Assemblage de Cépages rouges"/>
+            <column name="vintner" value="Favi"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="58"/>
+            <column name="name" value="Vin de Pays Suisse Assemblages Rouge Dolce Vita"/>
+            <column name="vintner" value="Dolce Vita"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="59"/>
+            <column name="name" value="Zürich AOC Cuvée Barrique Staatsschreiber Staatskellerei Zürich"/>
+            <column name="vintner" value="Staatskellerei Zürich"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="60"/>
+            <column name="name" value="Graveline Assemblage Rouge AOC"/>
+            <column name="vintner" value="Graveline"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="61"/>
+            <column name="name" value="Naturaplan Bio La Côte AOC Cuvée Noble Rouge Capitaine"/>
+            <column name="vintner" value="Domaine la Capitaine"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="62"/>
+            <column name="name" value="La Côte AOC Château d'Allaman"/>
+            <column name="vintner" value="Château d''Allaman"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="63"/>
+            <column name="name" value="Genève AOC Gamaret La clémence Cave de Genève"/>
+            <column name="vintner" value="Cave de Genève"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="64"/>
+            <column name="name" value="Genève AOC Gamaret Feuille d''Or La Cave de Genève"/>
+            <column name="vintner" value="La Cave de Genève"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="65"/>
+            <column name="name" value="Genève AOC Gamanote Noire Domaine du Paradis"/>
+            <column name="vintner" value="Domaine du Paradis"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="66"/>
+            <column name="name" value="Genève AOC Assemblage Noir Divin Domaine du Paradis"/>
+            <column name="vintner" value="Domaine du Paradis"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="67"/>
+            <column name="name" value="Vin de Pays Romand Gamaret Garanoir Cave de la Côte"/>
+            <column name="vintner" value="Cave de la Côte"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="68"/>
+            <column name="name" value="Magnum Vaud AOC L''As de Coeur Assemblage Rouge"/>
+            <column name="vintner" value="Inconnu"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="69"/>
+            <column name="name" value="Schaffhausen AOC LH Rot Weingut Lindenhof"/>
+            <column name="vintner" value="Weingut Lindenhof"/>
+            <column name="origin" value="SCHAFFHAUSEN"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="70"/>
+            <column name="name" value="La Côte AOC Assemblage Rouge Bio Be O"/>
+            <column name="vintner" value="Be O"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="71"/>
+            <column name="name" value="Valais AOC Dôle Blanche Les Bernadettes"/>
+            <column name="vintner" value="Les Bernadettes"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="72"/>
+            <column name="name" value="Valais AOC Dôle des Monts Maison Gilliard"/>
+            <column name="vintner" value="Maison Gilliard"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="73"/>
+            <column name="name" value="Pays Gamay de Romandie Rubiette"/>
+            <column name="vintner" value="Rubiette"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="74"/>
+            <column name="name" value="Prix Garantie Valais AOC Dôle Blanche Terrassesl"/>
+            <column name="vintner" value="Terrassesl"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="75"/>
+            <column name="name" value="Gamay Romand Les Liserons Vin de Pays"/>
+            <column name="vintner" value="Les Liserons"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="76"/>
+            <column name="name" value="La Côte AOC Salvagnin Valroux"/>
+            <column name="vintner" value="Valroux"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="77"/>
+            <column name="name" value="Vaud AOC Rosé Cuvée 48 Cave de Jolimont"/>
+            <column name="vintner" value="Cave de Jolimont"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="78"/>
+            <column name="name" value="Vin de Pays Romand Gamay Rosé Les Liserons"/>
+            <column name="vintner" value="Les Liserons"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="79"/>
+            <column name="name" value="Lavaux AOC Saint Saphorin Domaine des Faverges Grand Cru"/>
+            <column name="vintner" value="Domaine des Faverges"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="80"/>
+            <column name="name" value="Valais AOC Assemblage Rouge La Perle Noire Domaine du Mont d''Or"/>
+            <column name="vintner" value="Domaine du Mont d''Or"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="81"/>
+            <column name="name" value="Pro Montagna Dôle Jg"/>
+            <column name="vintner" value="Pro Montagna"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="82"/>
+            <column name="name" value="Genève AOC Gamay Dardagny Cave de Genève"/>
+            <column name="vintner" value="Cave de Genève"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="83"/>
+            <column name="name" value="Naturaplan Bio Rosé Comte Genève Jg"/>
+            <column name="vintner" value="Comte Genève"/>
+            <column name="origin" value="GENEVE"/>
+            <column name="region" value="GENEVA"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="84"/>
+            <column name="name" value="Valais AOC Dôle Blanche les Perlines"/>
+            <column name="vintner" value="Les Perlines"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="85"/>
+            <column name="name" value="Zürich AOC Staatsschreiber Cuvée Blanc Prestige"/>
+            <column name="vintner" value="Staatskellerei Zürich"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="86"/>
+            <column name="name" value="Zürich AOC Staatsschreiber Cuvée Blanc"/>
+            <column name="vintner" value="Staatskellerei Zürich"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="87"/>
+            <column name="name" value="Valais AOC Telegram Blanc My Sweet"/>
+            <column name="vintner" value="My Sweet"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="88"/>
+            <column name="name" value="Ticino DOC Merlot Roccolo"/>
+            <column name="vintner" value="Roccolo"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="89"/>
+            <column name="name" value="Pro Montagna Merlot TreValli Jg"/>
+            <column name="vintner" value="TreValli"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="90"/>
+            <column name="name" value="Ticino DOC Bianco di Merlot Bucaneve"/>
+            <column name="vintner" value="Bucaneve"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="91"/>
+            <column name="name" value="Ticino DOC Bianco di Merlot Roccolo"/>
+            <column name="vintner" value="Roccolo"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="92"/>
+            <column name="name" value="Ticino DOC Merlot Selezione d''Ottobre Matasci"/>
+            <column name="vintner" value="Matasci"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="93"/>
+            <column name="name" value="Ticino DOC Merlot Riserva Roncaia Vinattieri Ticino"/>
+            <column name="vintner" value="Vinattieri Ticino"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="94"/>
+            <column name="name" value="Ticino DOC Bianco di Merlot"/>
+            <column name="vintner" value="Inconnu"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="95"/>
+            <column name="name" value="Valais AOC Petite Arvine Terrasses du Rhône Bibacchus"/>
+            <column name="vintner" value="Bibacchus"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="96"/>
+            <column name="name" value="Valais AOC Petite Arvine Maître de Chais"/>
+            <column name="vintner" value="Maître de Chais"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="97"/>
+            <column name="name" value="Coop Fine Food Valais AOC Petite Arvine Coeur de Baron"/>
+            <column name="vintner" value="Coeur de Baron"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="98"/>
+            <column name="name" value="Valais AOC Petite Arvine Les Perlines Maison Gilliard"/>
+            <column name="vintner" value="Maison Gilliard"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="99"/>
+            <column name="name" value="Valais AOC Petite Arvine Telegram Maye"/>
+            <column name="vintner" value="Telegram Maye"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="100"/>
+            <column name="name" value="Valais AOC Assemblage Blanc Nez Noir Domaine Rouvinez"/>
+            <column name="vintner" value="Domaine Rouvinez"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="101"/>
+            <column name="name" value="Valais AOC Petite Arvine Jean-René Germanier"/>
+            <column name="vintner" value="Jean-René Germanier"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="102"/>
+            <column name="name" value="Valais AOC Petite Arvine Hurlevent"/>
+            <column name="vintner" value="Hurlevent"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="103"/>
+            <column name="name" value="Fleur du Rhône Petite Arvine Valais AOC"/>
+            <column name="vintner" value="Fleur du Rhône"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="104"/>
+            <column name="name" value="Valais AOC Petite Arvine Les Trésors de Famille Maison Gilliard"/>
+            <column name="vintner" value="Maison Gilliard"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="105"/>
+            <column name="name" value="Wallis AOC Petite Arvine Saillon Grand Cru"/>
+            <column name="vintner" value="Saillon Grand Cru"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="106"/>
+            <column name="name" value="Valais AOC Petite Arvine Clos de Cochetta Les Grands Murs Maison Gilliard"/>
+            <column name="vintner" value="Maison Gilliard"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="107"/>
+            <column name="name" value="Valais AOC Petite Arvine Domaine des Muses"/>
+            <column name="vintner" value="Domaine des Muses"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="108"/>
+            <column name="name" value="Valais AOC Petite Arvine Noblereine Charte d''Excellence Provins"/>
+            <column name="vintner" value="Provins"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="109"/>
+            <column name="name" value="Ticino IGT Prima Goccia Biano Chiodi"/>
+            <column name="vintner" value="Chiodi"/>
+            <column name="origin" value="TICINO"/>
+            <column name="region" value="TICINO"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="110"/>
+            <column name="name" value="Bio Naturaplan Terra Alpina Vino Bianco"/>
+            <column name="vintner" value="Naturaplan"/>
+            <column name="origin" value="GRAUBUNDEN"/>
+            <column name="region" value="THREE_LAKES"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="111"/>
+            <column name="name" value="Naturaplan Bio Château Barillet vin de pays Suisse Blanc"/>
+            <column name="vintner" value="Château Barillet"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="112"/>
+            <column name="name" value="Naturaplan Bio Cuvée Noble Blanc Domaine la Capitaine La Côte AOC"/>
+            <column name="vintner" value="Domaine la Capitaine"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="113"/>
+            <column name="name" value="Naturaplan Bio-Neuchâtel AOC Pinot Gris Domaine des Coccinelles"/>
+            <column name="vintner" value="Domaine des Coccinelles"/>
+            <column name="origin" value="NEUCHATEL"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="114"/>
+            <column name="name" value="Vaud AOC Pinot Gris Emblem"/>
+            <column name="vintner" value="Emblem"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="115"/>
+            <column name="name" value="Pinot Gris Neuchâtel AOC Château d''Auvernier"/>
+            <column name="vintner" value="Château d''Auvernier"/>
+            <column name="origin" value="NEUCHATEL"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="116"/>
+            <column name="name" value="Romand VdP Apologia Bianco"/>
+            <column name="vintner" value="Apologia"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="117"/>
+            <column name="name" value="Zürich AOC Staatschreiber Pinot Gris Staatskellerei Zürich"/>
+            <column name="vintner" value="Staatskellerei Zürich"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="118"/>
+            <column name="name" value="Chablais AOC Yvorne Rouge La Fierrausaz"/>
+            <column name="vintner" value="La Fierrausaz"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="119"/>
+            <column name="name" value="Zürich AOC Federweisser Stauffacher"/>
+            <column name="vintner" value="Stauffacher"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="120"/>
+            <column name="name" value="Valais AOC Rosé Oeil de Perdrix Le Rosel"/>
+            <column name="vintner" value="Le Rosel"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="121"/>
+            <column name="name" value="Zürich AOC Blauburgunder Staatsschreiber Staatskellerei Zürich"/>
+            <column name="vintner" value="Staatskellerei Zürich"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="122"/>
+            <column name="name" value="Schaffhausen AOC Hallauer Blauburgunder Weinkeller zum Stauffacher"/>
+            <column name="vintner" value="Weinkeller zum Stauffacher"/>
+            <column name="origin" value="SCHAFFHAUSEN"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="123"/>
+            <column name="name" value="Graubünden AOC Maienfelder Pinot Noir Steinbock"/>
+            <column name="vintner" value="Steinbock"/>
+            <column name="origin" value="GRAUBUNDEN"/>
+            <column name="region" value="THREE_LAKES"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="124"/>
+            <column name="name" value="Valais AOC Dôle de Salquenen Les Dailles"/>
+            <column name="vintner" value="Les Dailles"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="125"/>
+            <column name="name" value="Valais AOC Pinot Noir Saint-Léonard Domaines des Virets"/>
+            <column name="vintner" value="Domaines des Virets"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="126"/>
+            <column name="name" value="Valais AOC Dôle Étoile Dorée"/>
+            <column name="vintner" value="Étoile Dorée"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="127"/>
+            <column name="name" value="Valais AOC Oeil de Perdrix Domaines des Virets"/>
+            <column name="vintner" value="Domaines des Virets"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="128"/>
+            <column name="name" value="Mauler Cordon Or Demi-Sec Rosé"/>
+            <column name="vintner" value="Mauler"/>
+            <column name="origin" value="NEUCHATEL"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="129"/>
+            <column name="name" value="Valais AOC Pinot Noir Fleur du Rhône"/>
+            <column name="vintner" value="Fleur du Rhône"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="130"/>
+            <column name="name" value="Zürich AOC Réserve Prestige Blauburgunder Federweisser Edition Stauffacher"/>
+            <column name="vintner" value="Stauffacher"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="131"/>
+            <column name="name" value="Epesses Rouge Lavaux AOC, Union Vinicole Cully"/>
+            <column name="vintner" value="Union Vinicole Cully"/>
+            <column name="origin" value="VAUD"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="132"/>
+            <column name="name" value="Neuchâtel AOC Oeil de Perdrix Château d''Auvernier"/>
+            <column name="vintner" value="Château d''Auvernier"/>
+            <column name="origin" value="NEUCHATEL"/>
+            <column name="region" value="VAUD"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="133"/>
+            <column name="name" value="Zürich AOC Räuschling"/>
+            <column name="vintner" value="Inconnu"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="134"/>
+            <column name="name" value="Zürichsee AOC Räuschling Schwarzenbach Weinbau"/>
+            <column name="vintner" value="Schwarzenbach Weinbau"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="135"/>
+            <column name="name" value="Basel-Landschaft AOC Kluseggler Riesling-Sylvaner Klushof"/>
+            <column name="vintner" value="Klushof"/>
+            <column name="origin" value="BASEL_LAND"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="136"/>
+            <column name="name" value="Zürich AOC Staatsschreiber Sauvignon Blanc"/>
+            <column name="vintner" value="Staatskellerei Zürich"/>
+            <column name="origin" value="ZURICH"/>
+            <column name="region" value="GERMAN_SWITZERLAND"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="137"/>
+            <column name="name" value="Valais AOC Syrah Cayas Jean-René Germanier"/>
+            <column name="vintner" value="Jean-René Germanier"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="138"/>
+            <column name="name" value="Valais AOC Syrah Terrasses du Rhône Bibacchus"/>
+            <column name="vintner" value="Bibacchus"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="139"/>
+            <column name="name" value="Valais AOC Syrah Bibacchus"/>
+            <column name="vintner" value="Bibacchus"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="140"/>
+            <column name="name" value="Valais AOC Syrah Valisiana"/>
+            <column name="vintner" value="Valisiana"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="141"/>
+            <column name="name" value="Valais AOC Assemblage Rouge d''Enfer Maître de Chais"/>
+            <column name="vintner" value="Maître de Chais"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="142"/>
+            <column name="name" value="Valais AOC Syrah Les Perlines Maison Gilliard"/>
+            <column name="vintner" value="Maison Gilliard"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="143"/>
+            <column name="name" value="Magnum Valais AOC Syrah Cayas Jean-René Germanier"/>
+            <column name="vintner" value="Jean-René Germanier"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="144"/>
+            <column name="name" value="Valais AOC Syrah Maître de Chais Provins"/>
+            <column name="vintner" value="Provins"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="145"/>
+            <column name="name" value="Valais AOC Clos Grandinaz Rouge L''Orpailleur"/>
+            <column name="vintner" value="L''Orpailleur"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="146"/>
+            <column name="name" value="Valais AOC Mundus Vivendi Vidomne"/>
+            <column name="vintner" value="Vidomne"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="147"/>
+            <column name="name" value="Valais AOC Syrah Classique Domaine des Muses"/>
+            <column name="vintner" value="Domaine des Muses"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="148"/>
+            <column name="name" value="Valais AOC Syrah Defayes &amp; Crettenand"/>
+            <column name="vintner" value="Defayes &amp; Crettenand"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="149"/>
+            <column name="name" value="Valais AOC Syrah Rhône Saga Domaine Chevaliers"/>
+            <column name="vintner" value="Domaine Chevaliers"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <insert tableName="wine">
+            <column name="wine_id" valueNumeric="150"/>
+            <column name="name" value="Valais AOC Rosé Syrah Leon"/>
+            <column name="vintner" value="Leon"/>
+            <column name="origin" value="WALLIS"/>
+            <column name="region" value="VALAIS"/>
+        </insert>
+        <sql>
+            select setval('wine_wine_id_seq', 150, true);
+        </sql>
+    </changeSet>
+</databaseChangeLog>

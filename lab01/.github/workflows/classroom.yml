@@ -1,0 +1,80 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: ActorRepositoryTest
+      id: actorrepositorytest
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: ActorRepositoryTest
+        setup-command: ''
+        command: ./mvnw test -Dtest="ActorRepositoryTest"
+        timeout: 10
+        max-score: 1
+    - name: FilmRepositoryTest
+      id: filmrepositorytest
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: FilmRepositoryTest
+        setup-command: ''
+        command: ./mvnw test -Dtest="FilmRepositoryTest"
+        timeout: 10
+        max-score: 1
+    - name: InventoryRepositoryTest
+      id: inventoryrepositorytest
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: InventoryRepositoryTest
+        setup-command: ''
+        command: ./mvnw test -Dtest="InventoryRepositoryTest"
+        timeout: 10
+        max-score: 1
+    - name: ActorsInPGTest
+      id: actorsinpgtest
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: ActorsInPGTest
+        setup-command: ''
+        command: ./mvnw test -Dtest="ActorsInPGTest"
+        timeout: 10
+        max-score: 2
+    - name: CountryRentalsTest
+      id: countryrentalstest
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: CountryRentalsTest
+        setup-command: ''
+        command: ./mvnw test -Dtest="CountryRentalsTest"
+        timeout: 10
+        max-score: 1
+    - name: GreetingResourceTest
+      id: greetingresourcetest
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: GreetingResourceTest
+        setup-command: ''
+        command: ./mvnw test -Dtest="GreetingResourceTest"
+        timeout: 10
+        max-score: 1
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        ACTORREPOSITORYTEST_RESULTS: "${{steps.actorrepositorytest.outputs.result}}"
+        FILMREPOSITORYTEST_RESULTS: "${{steps.filmrepositorytest.outputs.result}}"
+        INVENTORYREPOSITORYTEST_RESULTS: "${{steps.inventoryrepositorytest.outputs.result}}"
+        ACTORSINPGTEST_RESULTS: "${{steps.actorsinpgtest.outputs.result}}"
+        COUNTRYRENTALSTEST_RESULTS: "${{steps.countryrentalstest.outputs.result}}"
+        GREETINGRESOURCETEST_RESULTS: "${{steps.greetingresourcetest.outputs.result}}"
+      with:
+        runners: actorrepositorytest,filmrepositorytest,inventoryrepositorytest,actorsinpgtest,countryrentalstest,greetingresourcetest

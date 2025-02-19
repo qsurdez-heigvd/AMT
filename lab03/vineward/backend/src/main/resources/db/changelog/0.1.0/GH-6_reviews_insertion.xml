@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert-default-reviews" author="qsurdez">
+
+        <insert tableName="review">
+            <column name="review_id" value="1"/>
+            <column name="title" value="Un titre très intéressant"/>
+            <column name="body" value="Un contenu très intéressant"/>
+            <column name="status" value="DRAFT"/>
+            <column name="author_fk" value="f041e55d-e9fd-4774-b7be-42c203b331f6"/>
+            <column name="wine_fk" value="1"/>
+        </insert>
+
+        <insert tableName="review">
+            <column name="review_id" value="2"/>
+            <column name="title" value="Les métamorphoses"/>
+            <column name="body" value="I want to speak about bodies changed into new forms. You, gods, since you are the ones who alter these, and all other things, inspire my attempt, and spin out a continuous thread of words, from the world's first origins to my own time.
+Before there was earth or sea or the sky that covers everything, Nature appeared the same throughout the whole world: what we call chaos: a raw confused mass, nothing but inert matter, badly combined discordant atoms of things, confused in the one place. There was no Titan yet, shining his light on the world, or waxing Phoebe renewing her white horns, or the earth hovering in surrounding air balanced by her own weight, or watery Amphitrite stretching out her arms along the vast shores of the world. Though there was land and sea and air, it was unstable land, unswimmable water, air needing light. Nothing retained its shape, one thing obstructed another, because in the one body, cold fought with heat, moist with dry, soft with hard, and weight with weightless things. "/>
+            <column name="status" value="VERIFIED"/>
+            <column name="author_fk" value="223e4567-e89b-12d3-a456-426614174000"/>
+            <column name="wine_fk" value="3"/>
+        </insert>
+
+        <insert tableName="review">
+            <column name="review_id" value="3"/>
+            <column name="title" value="Un bon vin bien tannin"/>
+            <column name="body" value="Voilà un très bon vin qui se fait bien sentir sous le palais."/>
+            <column name="status" value="DRAFT"/>
+            <column name="author_fk" value="123e4567-e89b-12d3-a456-426614174000"/>
+            <column name="wine_fk" value="15"/>
+        </insert>
+
+        <sql>
+            select setval('review_review_id_seq', 3, true);
+        </sql>
+    </changeSet>
+</databaseChangeLog>
